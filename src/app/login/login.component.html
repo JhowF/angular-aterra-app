@@ -1,0 +1,30 @@
+<app-page></app-page>
+<div id="LoginPage">
+  <img
+    src="https://app.aterraambiental.com/assets/img/logo.png"
+    alt="Aterra_Logo"
+  />
+  <p>
+    Ampliar benefícios econômicos, de inovação, de governança e sócioambientais
+    por meio da gestão, transformação e destinação dos resíduos.
+  </p>
+  <form [formGroup]="formGroup" (ngSubmit)="submit()">
+    <input
+      type="text"
+      id="Username"
+      formControlName="userName"
+      placeholder="informe seu e-mail"
+    />
+
+    <input
+      type="password"
+      formControlName="password"
+      placeholder="Password"
+      id="InputPassword"
+      maxlength="6"
+    />
+
+    <button type="submit">Acessar</button>
+    <a routerLink="/login">Acessar</a>
+  </form>
+</div>

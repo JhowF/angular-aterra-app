@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  float: right;
+}
+
+img {
+  margin-top: 50px;
+}
+
+#LoginPage {
+  display: flex;
+  position: absolute;
+  margin-left: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 35px;
+}
+
+form input {
+  height: 40px;
+  width: 340px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 0.2px solid #000;
+  /* height: 200; */
+}
+
+button {
+  height: 40px;
+  width: 340px;
+  background-color: #46cf48;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #f0f2f0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: black !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+p {
+  text-align: justify;
+  margin: 40px 25%;
+}

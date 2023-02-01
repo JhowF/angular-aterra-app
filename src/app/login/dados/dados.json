@@ -1,0 +1,10 @@
+{
+    "Usuarios":[
+        {"loginName": "exemplo@gmail.com", "loginCode": "123456"},
+        {"loginName": "exemplo1@gmail.com", "loginCode": "654321"},
+        {"loginName": "exemplo2@gmail.com", "loginCode": "000000"},
+        {"loginName": "exemplo3@gmail.com", "loginCode": "123456"},
+        {"loginName": "exemplo4@gmail.com", "loginCode": "123456"},
+        {"loginName": "exemplo5@gmail.com", "loginCode": "123456"}
+        ]
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#Decoration {
+  height: 100vh;
+}
+
+img {
+  width: 60%;
+  height: 70vh;
+  float: left;
+}
+#img2 {
+  display: inherit;
+  height: 30vh;
+}
+
+h1 {
+  float: left;
+  background-image: url(https://app.aterraambiental.com/assets/img/blend.png);
+  height: 30vh;
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
