@@ -17,10 +17,9 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class LoginComponent implements OnInit {
   formGroup!: FormGroup<any>;
   model!: LoginModel;
-  router!: Router;
-  constructor(private fb: FormBuilder, private route: ActivatedRoute) {
-    this.model = new LoginModel();
 
+  constructor(private fb: FormBuilder, private router: Router) {
+    this.model = new LoginModel();
     this.formGroup = this.fb.group(this.model);
   }
 
@@ -37,10 +36,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.initValidators();
-    this.route.queryParams.subscribe((params) => {
-      this.router = params['name'];
-    });
   }
+
+  logado = ``;
 
   async submit() {
     let dadosJson = dados.Usuarios;
@@ -53,13 +51,13 @@ export class LoginComponent implements OnInit {
           ? (existe = true)
           : ``;
       }
-    if (!this.formGroup.valid) {
+    else {
       console.log(`Verifique os campos digitados`);
-    } else {
-      existe
-        ? console.log(this.formGroup.value)
-        : console.log(`Esse usuario esta invalido`);
     }
+
+    existe
+      ? this.router.navigate(['/login'])
+      : console.log(`Esse usuario esta invalido`);
 
     // console.log(dados.Usuarios[0].loginName);
   }
